@@ -90,7 +90,7 @@ export default function Lobby({ position, active }: RoomProps) {
       <Sparkles count={80} scale={5} size={1.2} color="#7C3AED" position={[0, 0, -5]} />
 
       <Text position={[0, 4.5, -5]} fontSize={0.35} color="rgba(255,255,255,0.3)">
-        REPLYIQ HQ
+        SELLQ HQ
       </Text>
 
       <pointLight position={[0, 3, -3]} color="#7C3AED" intensity={6} distance={25} />

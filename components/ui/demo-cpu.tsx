@@ -3,7 +3,7 @@
 import { CpuArchitecture } from "@/components/ui/cpu-architecture"
 import { motion } from "framer-motion"
 
-export const ReplyIQCpuFeatures = () => {
+export const SellQCpuFeatures = () => {
   return (
     <div className="relative w-full min-h-screen bg-black overflow-hidden flex flex-col items-center py-20 z-20">
       
@@ -13,7 +13,7 @@ export const ReplyIQCpuFeatures = () => {
           The <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">Neural Core</span>
         </h2>
         <p className="text-neutral-400 text-lg">
-          Data flows seamlessly through the ReplyIQ architecture. Incoming messages are instantly routed, scored, and processed by autonomous AI agents in real-time.
+          Data flows seamlessly through the SellQ architecture. Incoming messages are instantly routed, scored, and processed by autonomous AI agents in real-time.
         </p>
       </div>
 

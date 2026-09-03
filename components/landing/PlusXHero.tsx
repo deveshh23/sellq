@@ -29,7 +29,7 @@ export function PlusXNavbar() {
       initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.5 }}
       className="fixed top-0 left-0 right-0 z-50 py-8 px-12 flex items-center justify-between pointer-events-auto"
     >
-      <Link href="/" className="font-sans font-medium text-[15px] text-white tracking-wide">ReplyIQ</Link>
+      <Link href="/" className="font-sans font-medium text-[15px] text-white tracking-wide">SellQ</Link>
       <Link href="/login" className="font-sans text-[13px] text-white hover:underline underline-offset-4 transition-all">Dashboard →</Link>
     </motion.nav>
   );

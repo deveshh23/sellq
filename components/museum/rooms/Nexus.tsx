@@ -51,7 +51,7 @@ export default function Nexus({ position, active }: RoomProps) {
       ))}
 
       <Text position={[0, 2, -5]} fontSize={2.5} color="white" material-emissive="white" material-emissiveIntensity={0.4}>
-        ReplyIQ
+        SellQ
       </Text>
       <Text position={[0, 0.5, -5]} fontSize={0.3} color="rgba(255,255,255,0.5)">
         THE FUTURE OF SALES INTELLIGENCE

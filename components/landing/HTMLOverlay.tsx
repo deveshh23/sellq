@@ -101,7 +101,7 @@ export default function HTMLOverlay() {
               <CharReveal text="runs on intelligence." delay={0.6} className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--accent-purple)] to-[var(--accent-blue)]" />
             </h2>
             <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }} className="text-[17px] font-light text-[var(--text-secondary)] mb-8 max-w-[480px] mx-auto">
-              Join 500+ businesses already using ReplyIQ.
+              Join 500+ businesses already using SellQ.
             </motion.p>
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.4 }} className="flex justify-center gap-6">
               <Link href="/login" className="pointer-events-auto inline-block border border-white px-[40px] py-[16px] text-white hover:bg-[var(--accent-purple)]/20 transition-all rounded-md">

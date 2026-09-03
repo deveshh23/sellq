@@ -1,5 +1,5 @@
 -- ============================================
--- ReplyIQ AI — Complete Supabase Schema
+-- SellQ AI — Complete Supabase Schema
 -- Run this SQL in the Supabase SQL Editor
 -- ============================================
 

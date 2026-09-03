@@ -63,7 +63,7 @@ export default function AnalyticsPage() {
   const leadsCount = leads.length;
   
   useEffect(() => {
-    document.title = "Analytics — ReplyIQ AI";
+    document.title = "Analytics — SellQ AI";
   }, []);
 
   if (isLoading) {

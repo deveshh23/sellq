@@ -2,13 +2,13 @@
 
 import { ImageComparison } from "@/components/ui/image-comparison-slider";
 
-export function ReplyIQImageComparison() {
+export function SellQImageComparison() {
   return (
     <div className="w-full relative z-20 py-24 bg-transparent border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-24">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-            Traditional CRM vs ReplyIQ
+            Traditional CRM vs SellQ
           </h2>
           <p className="text-lg md:text-xl text-neutral-400 font-light">
             Transform reactive sales workflows into predictive revenue intelligence.
@@ -46,14 +46,14 @@ export function ReplyIQImageComparison() {
                 beforeImage="https://images.unsplash.com/photo-1542744094-3a31f272c490?q=80&w=1200&auto=format&fit=crop"
                 afterImage="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop"
                 altBefore="Traditional CRM Screenshot"
-                altAfter="ReplyIQ Dashboard Screenshot"
+                altAfter="SellQ Dashboard Screenshot"
             />
           </div>
 
           {/* Right Highlights */}
           <div className="lg:col-span-3 order-3 flex flex-col space-y-6">
             <h3 className="text-xl font-semibold text-white border-b border-white/10 pb-4 flex items-center gap-2">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">ReplyIQ</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">SellQ</span>
             </h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">

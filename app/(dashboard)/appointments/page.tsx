@@ -34,7 +34,7 @@ export default function AppointmentsPage() {
   const [duration, setDuration] = useState(30);
   const [notes, setNotes] = useState('');
 
-  useEffect(() => { document.title = "Appointments — ReplyIQ AI"; }, []);
+  useEffect(() => { document.title = "Appointments — SellQ AI"; }, []);
 
   // Calendar logic
   const monthStart = startOfMonth(currentDate);

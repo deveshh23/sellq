@@ -15,7 +15,7 @@ export const useNotificationStore = create<NotificationState>((set) => ({
       id: 'init-sys',
       type: 'system',
       title: 'System Online',
-      description: 'ReplyIQ AI agent initialized and listening for incoming channels.',
+      description: 'SellQ AI agent initialized and listening for incoming channels.',
       timestamp: new Date(Date.now() - 30 * 60000).toISOString(), // 30 mins ago
       read: false,
     },

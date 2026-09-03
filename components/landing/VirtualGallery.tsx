@@ -79,7 +79,7 @@ export function ManifestoPanel() {
           <p className="font-heading font-black text-[28px] md:text-[3.5vw] leading-[1.1] text-white uppercase tracking-[0.08em]">
             SMALL BUSINESSES LOSE CUSTOMERS EVERY DAY<br/>
             BECAUSE REPLIES ARE SLOW.<br/>
-            REPLYIQ CHANGES THAT.<br/>
+            SELLQ CHANGES THAT.<br/>
             <span className="text-[var(--accent-yellow)]">AI THAT REPLIES IN 3 SECONDS.</span><br/>
             AI THAT SCORES YOUR LEADS.<br/>
             AI THAT REMEMBERS EVERY PROMISE.<br/>

@@ -57,7 +57,7 @@ export default function AuthPage() {
 
 	const handleDemoLogin = () => {
 		setLoading(true);
-		setEmail('demo@replyiq.ai');
+		setEmail('demo@sellq.ai');
 		setPassword('Demo@2026');
 		
 		toast({
@@ -87,13 +87,13 @@ export default function AuthPage() {
 					<div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-tr from-violet-600 to-cyan-500 shadow-lg shadow-violet-500/25">
 						<Zap size={20} className="text-white" />
 					</div>
-					<p className="text-2xl font-bold tracking-tight text-white font-heading">ReplyIQ</p>
+					<p className="text-2xl font-bold tracking-tight text-white font-heading">SellQ</p>
 				</div>
 				
 				<div className="z-10 mt-auto">
 					<blockquote className="space-y-4 max-w-lg">
 						<p className="text-2xl font-light leading-relaxed text-zinc-300">
-							&ldquo;ReplyIQ has completely transformed our revenue engine. We score leads instantly and never miss a follow-up. It is basically magic.&rdquo;
+							&ldquo;SellQ has completely transformed our revenue engine. We score leads instantly and never miss a follow-up. It is basically magic.&rdquo;
 						</p>
 						<footer className="text-sm font-medium text-zinc-500 flex items-center gap-3">
 							<div className="w-8 h-8 rounded-full bg-zinc-800"></div>
@@ -127,7 +127,7 @@ export default function AuthPage() {
 						<div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-tr from-violet-600 to-cyan-500 shadow-lg shadow-violet-500/25">
 							<Zap size={20} className="text-white" />
 						</div>
-						<p className="text-2xl font-bold tracking-tight text-white font-heading">ReplyIQ</p>
+						<p className="text-2xl font-bold tracking-tight text-white font-heading">SellQ</p>
 					</div>
 
 					<div className="flex flex-col space-y-2">
@@ -218,7 +218,7 @@ export default function AuthPage() {
 
 			{/* Loading Overlay for Demo */}
 			<AnimatePresence>
-				{loading && email === 'demo@replyiq.ai' && (
+				{loading && email === 'demo@sellq.ai' && (
 					<motion.div
 						key="demo-loading-overlay"
 						initial={{ opacity: 0 }}

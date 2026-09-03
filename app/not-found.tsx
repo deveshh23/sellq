@@ -47,7 +47,7 @@ export default function NotFound() {
           className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-violet-500/30 bg-violet-500/10 text-violet-400 text-xs font-bold mb-6"
         >
           <Sparkles size={12} className="animate-pulse" />
-          ReplyIQ AI Workspace
+          SellQ AI Workspace
         </motion.div>
 
         <motion.h1

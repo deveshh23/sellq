@@ -68,9 +68,9 @@ const defaultNewsCards: NewsCard[] = [
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
     gradientColors: ["from-purple-500/20", "to-blue-500/20"],
     content: [
-      "By instantly engaging leads across WhatsApp and Email within seconds of their inquiry, ReplyIQ dramatically increases the likelihood of a closed deal.",
+      "By instantly engaging leads across WhatsApp and Email within seconds of their inquiry, SellQ dramatically increases the likelihood of a closed deal.",
       "The autonomous sales agent operates continuously, never missing an inbound inquiry. Using sophisticated natural language processing, the AI identifies buying intent immediately and responds with highly personalized, context-aware messaging.",
-      "Our latest analytics show that businesses deploying ReplyIQ see an average 34% increase in their total lead conversion rates within the first quarter of deployment. The immediate engagement stops prospects from checking out competitors while waiting for a human reply."
+      "Our latest analytics show that businesses deploying SellQ see an average 34% increase in their total lead conversion rates within the first quarter of deployment. The immediate engagement stops prospects from checking out competitors while waiting for a human reply."
     ]
   },
   {
@@ -84,7 +84,7 @@ const defaultNewsCards: NewsCard[] = [
     gradientColors: ["from-blue-500/20", "to-cyan-500/20"],
     content: [
       "Never let a lead go cold. The AI core guarantees sub-two-second response times 24/7/365, across every supported messaging channel.",
-      "Speed to lead is the single most critical factor in modern sales. Research indicates that conversion rates drop by 400% if the lead isn't responded to within the first 5 minutes. ReplyIQ obliterates this delay, handling the initial interaction in roughly 1.2 seconds.",
+      "Speed to lead is the single most critical factor in modern sales. Research indicates that conversion rates drop by 400% if the lead isn't responded to within the first 5 minutes. SellQ obliterates this delay, handling the initial interaction in roughly 1.2 seconds.",
       "Whether the inquiry comes in via Instagram DM, a website form, or a direct email, the platform immediately processes the context, searches the trained company knowledge base, and drafts a perfectly natural, accurate response."
     ]
   },
@@ -99,7 +99,7 @@ const defaultNewsCards: NewsCard[] = [
     gradientColors: ["from-rose-500/20", "to-red-500/20"],
     content: [
       "Predictive sentiment analysis catches frustrated users early, automatically escalating critical tickets to human reps before the customer churns.",
-      "ReplyIQ doesn't just respond to messages; it understands the emotional state of the user. By analyzing tone, phrasing, and context, the system assigns a real-time sentiment score to every interaction.",
+      "SellQ doesn't just respond to messages; it understands the emotional state of the user. By analyzing tone, phrasing, and context, the system assigns a real-time sentiment score to every interaction.",
       "When a conversation is flagged as high-risk or the customer shows signs of severe frustration, the AI instantly bridges the gap, routing the conversation directly to your senior support staff along with a comprehensive summary of the interaction history, ultimately reducing churn by 22%."
     ]
   },
@@ -114,7 +114,7 @@ const defaultNewsCards: NewsCard[] = [
     gradientColors: ["from-emerald-500/20", "to-teal-500/20"],
     content: [
       "Autonomous scheduling agents handle the back-and-forth negotiation, directly depositing qualified leads into your sales team's calendar.",
-      "The dreaded back-and-forth of finding a suitable time is a major drop-off point in the sales funnel. ReplyIQ seamlessly integrates with your team's Google or Outlook calendars, reads availability in real-time, and naturally negotiates a time with the prospect.",
+      "The dreaded back-and-forth of finding a suitable time is a major drop-off point in the sales funnel. SellQ seamlessly integrates with your team's Google or Outlook calendars, reads availability in real-time, and naturally negotiates a time with the prospect.",
       "Once a time is agreed upon, the AI sends the invite, logs the event in your CRM, and even follows up with automated, personalized reminders. This frictionless process typically triples the volume of successful meetings booked."
     ]
   }

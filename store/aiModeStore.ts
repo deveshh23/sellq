@@ -17,7 +17,7 @@ export const useAIModeStore = create<AIModeState>()(
       settings: {
         autoPilot: false,
         tone: 'professional',
-        agentName: 'ReplyIQ Copilot',
+        agentName: 'SellQ Copilot',
         customInstructions: 'Be polite, concise, and helpful. Always try to identify commercial intent and flag it as a lead.',
       },
       updateSettings: (newSettings) =>

@@ -51,7 +51,7 @@ export function FinalCTA() {
       
       <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} className="relative z-10 flex flex-col items-center text-center">
         <div className="font-mono text-[11px] text-[var(--text-dim)] tracking-[0.2em] uppercase mb-8">
-          REPLYIQ AI · UNIFIED INBOX · 2026
+          SELLQ AI · UNIFIED INBOX · 2026
         </div>
         
         <h2 className="font-heading font-black text-[48px] md:text-[6vw] text-white leading-[0.9] tracking-[0.05em] uppercase mb-8">
@@ -79,7 +79,7 @@ export function Footer() {
     <footer className="bg-[var(--bg)] border-t border-[var(--border)] pt-12 pb-6 px-8 relative z-50">
       <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row justify-between items-center gap-8 mb-12">
         <div className="flex flex-col items-center lg:items-start gap-2">
-          <span className="font-heading font-bold text-[22px] tracking-[0.2em] text-white uppercase">REPLYIQ</span>
+          <span className="font-heading font-bold text-[22px] tracking-[0.2em] text-white uppercase">SELLQ</span>
           <span className="font-mono text-[10px] text-[var(--text-dim)] uppercase tracking-wider">THE UNIFIED AI INBOX FOR SMALL BUSINESS</span>
         </div>
         
@@ -96,7 +96,7 @@ export function Footer() {
       </div>
       
       <div className="max-w-[1400px] mx-auto border-t border-[var(--border)] pt-6 flex flex-col md:flex-row justify-between items-center gap-4 font-mono text-[9px] text-[var(--text-dim)] uppercase tracking-[0.15em]">
-        <span>© 2026 REPLYIQ AI</span>
+        <span>© 2026 SELLQ AI</span>
         <div className="flex gap-6">
           <a href="#" className="hover:text-white transition-colors">PRIVACY</a>
           <a href="#" className="hover:text-white transition-colors">TERMS</a>

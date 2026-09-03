@@ -31,7 +31,7 @@ export default function NavigationUI() {
   return (
     <div className="fixed inset-0 pointer-events-none z-50">
       <div className="absolute top-0 left-0 right-0 p-8 flex justify-between items-center pointer-events-auto">
-        <div className="font-sans text-[15px] font-medium text-white">ReplyIQ</div>
+        <div className="font-sans text-[15px] font-medium text-white">SellQ</div>
         <a href="/login" className="font-sans text-[13px] text-white/40 hover:text-white transition-colors">Skip to Dashboard →</a>
       </div>
 

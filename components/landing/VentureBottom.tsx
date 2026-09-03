@@ -40,7 +40,7 @@ export function VentureSalesAgent() {
           <div className="flex flex-col gap-4 pt-[80px]">
             <AnimatePresence step={step} min={1}><div className="self-start bg-[var(--bg)] border border-[var(--border)] text-white text-[13px] px-4 py-3 rounded-2xl rounded-tl-sm max-w-[80%] font-sans">Hi, what are your catering packages?</div></AnimatePresence>
             
-            <AnimatePresence step={step} min={2} max={3}><div className="self-end text-[11px] text-[var(--text-muted)] font-mono flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-[var(--purple-light)] animate-pulse" /> ReplyIQ AI analyzing...</div></AnimatePresence>
+            <AnimatePresence step={step} min={2} max={3}><div className="self-end text-[11px] text-[var(--text-muted)] font-mono flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-[var(--purple-light)] animate-pulse" /> SellQ AI analyzing...</div></AnimatePresence>
             
             <AnimatePresence step={step} min={3}><div className="self-end bg-[rgba(124,58,237,0.1)] border border-[rgba(124,58,237,0.3)] text-[var(--purple-light)] text-[10px] px-3 py-2 rounded-lg max-w-[80%] font-mono uppercase tracking-wider mb-[-8px]">Intent: Pricing · Sentiment: Positive · +12pts</div></AnimatePresence>
             
@@ -97,7 +97,7 @@ export function VentureMetrics() {
       <div className="max-w-[1200px] mx-auto px-6 relative z-10">
         <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-16">
           <h2 className="font-sans font-semibold text-[clamp(32px,4vw,56px)] tracking-[-0.02em] text-white mb-4">Real results. Real intelligence.</h2>
-          <p className="font-sans text-[18px] text-[var(--text-secondary)]">What ReplyIQ delivers for sales teams every single day.</p>
+          <p className="font-sans text-[18px] text-[var(--text-secondary)]">What SellQ delivers for sales teams every single day.</p>
         </motion.div>
 
         <motion.div variants={stagger} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.1 }} className="grid md:grid-cols-3 gap-6">
@@ -143,7 +143,7 @@ export function VentureCTA() {
         </motion.h2>
         
         <motion.p variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} className="font-sans text-[18px] text-[var(--text-secondary)] max-w-[600px] leading-[1.7] mb-12">
-          Join 500+ businesses already using ReplyIQ to score leads, prevent churn,
+          Join 500+ businesses already using SellQ to score leads, prevent churn,
           and close deals on autopilot. No credit card. No setup fees.
         </motion.p>
         
@@ -170,7 +170,7 @@ export function VentureFooter() {
       <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
         <div className="flex items-center gap-2">
           <div className="w-5 h-5 rounded bg-[var(--purple-primary)] flex items-center justify-center"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></div>
-          <span className="font-sans font-semibold text-white tracking-tight">ReplyIQ</span>
+          <span className="font-sans font-semibold text-white tracking-tight">SellQ</span>
           <span className="font-sans text-[12px] text-[var(--text-muted)] ml-2">© 2026</span>
         </div>
         <div className="flex gap-6 font-sans text-[13px] text-[var(--text-secondary)]">

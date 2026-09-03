@@ -48,7 +48,7 @@ export default function SettingsPage() {
   });
 
   React.useEffect(() => {
-    document.title = "Settings — ReplyIQ AI";
+    document.title = "Settings — SellQ AI";
   }, []);
 
   // Tab 2 - AI Behavior Local Settings
@@ -70,7 +70,7 @@ export default function SettingsPage() {
   const [teamMembers, setTeamMembers] = useState<TeamMember[]>([
     { 
       name: 'Sarah Jenkins', 
-      email: 'admin@replyiq.com', 
+      email: 'admin@sellq.com', 
       role: 'Admin', 
       avatar: 'SJ',
       avatarBg: 'bg-zinc-500/20 text-zinc-400 border-zinc-500/30',
@@ -81,7 +81,7 @@ export default function SettingsPage() {
     },
     { 
       name: 'Aryan Mehta', 
-      email: 'aryan@replyiq.com', 
+      email: 'aryan@sellq.com', 
       role: 'Agent', 
       avatar: 'AM',
       avatarBg: 'bg-blue-500/20 text-blue-400 border-blue-500/30',
@@ -91,7 +91,7 @@ export default function SettingsPage() {
     },
     { 
       name: 'Priya Menon', 
-      email: 'priya@replyiq.com', 
+      email: 'priya@sellq.com', 
       role: 'Viewer', 
       avatar: 'PM',
       avatarBg: 'bg-amber-500/20 text-amber-400 border-amber-500/30',
@@ -105,7 +105,7 @@ export default function SettingsPage() {
   const [inviteRole, setInviteRole] = useState<'Admin' | 'Agent' | 'Viewer'>('Agent');
 
   // Tab 5 - Account
-  const [businessName, setBusinessName] = useState('ReplyIQ Bistro');
+  const [businessName, setBusinessName] = useState('SellQ Bistro');
   const [businessType, setBusinessType] = useState('restaurant');
   const [deleteConfirmText, setDeleteConfirmText] = useState('');
 
@@ -677,7 +677,7 @@ export default function SettingsPage() {
                       <input
                         disabled
                         type="email"
-                        value="admin@replyiq.com"
+                        value="admin@sellq.com"
                         className="w-full px-3 py-2 rounded-lg border border-white/5 bg-zinc-950/20 text-xs text-zinc-500 outline-none select-none cursor-not-allowed font-medium"
                       />
                     </div>
@@ -758,7 +758,7 @@ export default function SettingsPage() {
                     Install the live website chat widget co-pilot client. Paste the following script block directly before the closing <code className="text-violet-300 font-mono text-[9px] bg-zinc-950 px-1 py-0.5 rounded">&lt;/body&gt;</code> element on your site:
                   </p>
                   <pre className="p-3 rounded-lg bg-zinc-950 text-[9px] font-mono text-cyan-300 overflow-x-auto leading-relaxed border border-white/5 select-all cursor-pointer">
-                    {`<script src="https://cdn.replyiq-ai.com/widget.js" data-workspace-id="rp-wsp-8849" defer></script>`}
+                    {`<script src="https://cdn.sellq.com/widget.js" data-workspace-id="rp-wsp-8849" defer></script>`}
                   </pre>
                   <p className="text-[9px] text-zinc-500 italic">💡 The widget matches dark/light mode configurations dynamically.</p>
                 </div>
@@ -768,7 +768,7 @@ export default function SettingsPage() {
                     <label className="text-[9px] text-zinc-500 font-bold uppercase tracking-wider">Gateway Endpoint URL</label>
                     <input
                       type="text"
-                      defaultValue="https://api.replyiq-ai.com/v1/webhook"
+                      defaultValue="https://api.sellq.com/v1/webhook"
                       className="w-full px-3 py-2 rounded-lg border border-white/10 bg-zinc-950/40 text-[10px] text-white outline-none"
                     />
                   </div>
@@ -833,7 +833,7 @@ export default function SettingsPage() {
                   <input
                     required
                     type="email"
-                    placeholder="e.g. agent@replyiq.com"
+                    placeholder="e.g. agent@sellq.com"
                     value={inviteEmail}
                     onChange={(e) => setInviteEmail(e.target.value)}
                     className="w-full px-3 py-2 rounded-lg border border-white/10 bg-zinc-950/40 text-sm text-white outline-none focus:border-zinc-500/50 focus:ring-1 focus:ring-zinc-500/50 transition-all"

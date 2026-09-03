@@ -35,7 +35,7 @@ export function PlusXSalesAgent() {
         {/* Chat UI */}
         <div className="w-[45%] flex flex-col gap-5 h-[400px] justify-center">
           <StepReveal step={step} min={1}><div className="self-start text-white bg-[#0A0A0A] border border-white/10 text-[14px] px-5 py-3 rounded-2xl font-sans max-w-[85%]">What are your enterprise pricing options?</div></StepReveal>
-          <StepReveal step={step} min={2} max={4}><div className="self-end text-[var(--accent-purple-light)] text-[11px] font-mono flex items-center gap-2 tracking-widest"><div className="flex gap-1"><div className="w-1 h-1 bg-current rounded-full animate-bounce"/><div className="w-1 h-1 bg-current rounded-full animate-bounce" style={{animationDelay:'0.1s'}}/><div className="w-1 h-1 bg-current rounded-full animate-bounce" style={{animationDelay:'0.2s'}}/></div>ReplyIQ analyzing...</div></StepReveal>
+          <StepReveal step={step} min={2} max={4}><div className="self-end text-[var(--accent-purple-light)] text-[11px] font-mono flex items-center gap-2 tracking-widest"><div className="flex gap-1"><div className="w-1 h-1 bg-current rounded-full animate-bounce"/><div className="w-1 h-1 bg-current rounded-full animate-bounce" style={{animationDelay:'0.1s'}}/><div className="w-1 h-1 bg-current rounded-full animate-bounce" style={{animationDelay:'0.2s'}}/></div>SellQ analyzing...</div></StepReveal>
           <StepReveal step={step} min={3}><div className="self-end text-amber-500 text-[11px] font-mono tracking-widest uppercase">Intent: Pricing inquiry · Score +12pts</div></StepReveal>
           <StepReveal step={step} min={4}><div className="self-end bg-[rgba(124,58,237,0.1)] border border-[rgba(124,58,237,0.2)] text-[var(--accent-purple-light)] text-[14px] px-5 py-3 rounded-2xl font-sans max-w-[85%]">Our Enterprise plan starts at ₹4,999/mo with unlimited users...</div></StepReveal>
           <StepReveal step={step} min={5}><div className="self-start text-white bg-[#0A0A0A] border border-white/10 text-[14px] px-5 py-3 rounded-2xl font-sans max-w-[85%] mt-4">Can we schedule a demo this week?</div></StepReveal>
@@ -136,7 +136,7 @@ export function PlusXCTA() {
         </h2>
         
         <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1, delay: 0.6 }} viewport={{ once: true }} className="font-sans text-[18px] font-light text-[var(--text-secondary)] leading-[1.8] max-w-[500px] mb-12">
-          Join 500+ businesses already using ReplyIQ. No credit card. No setup fees. Results in 48 hours.
+          Join 500+ businesses already using SellQ. No credit card. No setup fees. Results in 48 hours.
         </motion.p>
         
         <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.9, ease: expoEase as any }} viewport={{ once: true }} className="mb-6">
@@ -151,7 +151,7 @@ export function PlusXCTA() {
       </div>
 
       <div className="absolute bottom-6 font-mono text-[10px] text-white/20 uppercase tracking-widest z-10">
-        © 2026 ReplyIQ · Privacy · Terms
+        © 2026 SellQ · Privacy · Terms
       </div>
     </section>
   );

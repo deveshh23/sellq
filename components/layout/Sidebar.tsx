@@ -100,7 +100,7 @@ export function Sidebar({ collapsed, setCollapsed }: SidebarProps) {
                 exit={{ opacity: 0, x: -10 }}
                 className="text-sm font-bold tracking-tight text-white font-heading"
               >
-                ReplyIQ
+                SellQ
               </motion.span>
             )}
           </AnimatePresence>

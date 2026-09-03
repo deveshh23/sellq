@@ -2,7 +2,7 @@
 
 import { LightningSplit } from '@/components/ui/lightning-split';
 
-export function ReplyIQLightningSplit() {
+export function SellQLightningSplit() {
   
   const leftContent = (
     <div className="flex h-full w-full flex-col justify-center bg-black/90 p-8 md:p-16 lg:p-24 relative overflow-hidden">
@@ -33,7 +33,7 @@ export function ReplyIQLightningSplit() {
       <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 to-purple-900/10 z-0"></div>
       <div className="relative z-10 max-w-xl ml-auto mr-4 md:mr-12 lg:mr-24 w-full text-right">
         <h3 className="text-3xl md:text-5xl font-bold mb-8 border-b border-blue-900/30 pb-6 inline-block w-full">
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">ReplyIQ</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">SellQ</span>
         </h3>
         <ul className="space-y-6 flex flex-col items-end">
           {[
@@ -63,7 +63,7 @@ export function ReplyIQLightningSplit() {
           </span>
         </h2>
         <p className="text-lg md:text-xl text-neutral-400 max-w-2xl mx-auto font-light leading-relaxed">
-          ReplyIQ transforms customer interactions into actionable intelligence.
+          SellQ transforms customer interactions into actionable intelligence.
         </p>
       </div>
 

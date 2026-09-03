@@ -86,7 +86,7 @@ export function FinalCTA() {
           STOP LOSING LEADS.<br />START CLOSING DEALS.
         </h2>
         <p className="font-mono text-lg text-white/80 mb-12 max-w-2xl">
-          ReplyIQ AI is free to start. No credit card. No setup fees. Just results.
+          SellQ AI is free to start. No credit card. No setup fees. Just results.
         </p>
         <Link href="/login" className="bg-white text-black font-mono text-sm uppercase tracking-widest px-10 py-5 hover:bg-gray-200 transition-colors inline-flex items-center gap-4">
           GET STARTED FREE <span>→</span>
@@ -104,7 +104,7 @@ export function Footer() {
     <footer className="bg-black border-t border-[#1A1A1A] py-12 px-8">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="flex flex-col items-center md:items-start gap-2">
-          <span className="font-heading text-2xl tracking-widest text-white">REPLYIQ AI</span>
+          <span className="font-heading text-2xl tracking-widest text-white">SELLQ AI</span>
           <span className="font-mono text-xs text-[#666666]">The Unified AI Inbox for Small Business</span>
         </div>
         
@@ -120,7 +120,7 @@ export function Footer() {
       </div>
       
       <div className="max-w-7xl mx-auto mt-12 flex flex-col md:flex-row justify-between items-center gap-4 font-mono text-[10px] text-[#444444] uppercase tracking-widest border-t border-[#1A1A1A] pt-8">
-        <span>© 2026 ReplyIQ AI</span>
+        <span>© 2026 SellQ AI</span>
         <div className="flex gap-4">
           <a href="#" className="hover:text-[#999999]">Privacy</a>
           <a href="#" className="hover:text-[#999999]">Terms</a>

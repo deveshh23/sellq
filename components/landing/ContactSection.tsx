@@ -34,7 +34,7 @@ export function ContactSection() {
           className="text-neutral-400 mb-12 leading-relaxed"
         >
           Ready to transform your revenue intelligence? We're here to help. <br/>
-          Reach out at <a href="mailto:support@replyiq.ai" className="text-purple-400 hover:text-purple-300 transition-colors">support@replyiq.ai</a>
+          Reach out at <a href="mailto:support@sellq.ai" className="text-purple-400 hover:text-purple-300 transition-colors">support@sellq.ai</a>
         </motion.p>
       </div>
 

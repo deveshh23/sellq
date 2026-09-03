@@ -25,7 +25,7 @@ export default function LeadsPage() {
   const [sortAsc, setSortAsc] = useState(false);
 
   React.useEffect(() => {
-    document.title = "Lead Pipeline — ReplyIQ AI";
+    document.title = "Lead Pipeline — SellQ AI";
   }, []);
 
   function AnimatedCounter({ value, delay = 0 }: { value: number; delay?: number }) {
@@ -99,7 +99,7 @@ export default function LeadsPage() {
     const blob = new Blob([csv], { type: 'text/csv' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
-    a.href = url; a.download = 'replyiq-leads.csv'; a.click();
+    a.href = url; a.download = 'sellq-leads.csv'; a.click();
     URL.revokeObjectURL(url);
   };
 

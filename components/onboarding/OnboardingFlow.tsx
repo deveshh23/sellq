@@ -71,7 +71,7 @@ export function OnboardingFlow() {
           <div className="space-y-6 animate-fade-in">
             <div className="text-center space-y-2">
               <h2 className="text-xl font-bold text-white tracking-wide">Connect Communication Channels</h2>
-              <p className="text-xs text-zinc-400">Select the active portals you want ReplyIQ to monitor for incoming queries.</p>
+              <p className="text-xs text-zinc-400">Select the active portals you want SellQ to monitor for incoming queries.</p>
             </div>
 
             <div className="space-y-3 pt-2">
@@ -181,7 +181,7 @@ export function OnboardingFlow() {
                   type="text"
                   value={agentName}
                   onChange={(e) => setAgentName(e.target.value)}
-                  placeholder="e.g. ReplyIQ Copilot"
+                  placeholder="e.g. SellQ Copilot"
                   className="w-full px-3 py-2 rounded-lg border border-white/10 bg-zinc-950/40 text-xs text-white placeholder-zinc-500 outline-none focus:ring-1 focus:ring-zinc-500 focus:border-zinc-500 transition-all"
                 />
               </div>
@@ -240,7 +240,7 @@ export function OnboardingFlow() {
             </div>
 
             <div className="space-y-2 max-w-sm mx-auto">
-              <h2 className="text-xl font-bold text-white tracking-wide">ReplyIQ Hub Calibrated!</h2>
+              <h2 className="text-xl font-bold text-white tracking-wide">SellQ Hub Calibrated!</h2>
               <p className="text-xs text-zinc-400 leading-relaxed font-light">
                 Your AI agent <span className="font-semibold text-zinc-400">{agentName}</span> is online with a <span className="font-semibold text-zinc-400">{tone}</span> tone profile.
               </p>

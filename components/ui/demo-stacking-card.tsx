@@ -6,7 +6,7 @@ const metrics = [
   {
     title: 'Lead Conversion Rate: +34%',
     description:
-      'By instantly engaging leads across WhatsApp and Email within seconds of their inquiry, ReplyIQ dramatically increases the likelihood of a closed deal.',
+      'By instantly engaging leads across WhatsApp and Email within seconds of their inquiry, SellQ dramatically increases the likelihood of a closed deal.',
     link: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop',
     color: '#0f172a', // slate-900
   },
@@ -33,11 +33,11 @@ const metrics = [
   },
 ];
 
-export function ReplyIQMetricsStrip() {
+export function SellQMetricsStrip() {
   return (
     <Component 
       projects={metrics} 
-      title="The ReplyIQ Impact" 
+      title="The SellQ Impact" 
       subtitle="Measurable growth driven by autonomous sales agents."
     />
   );

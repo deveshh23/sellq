@@ -61,12 +61,12 @@ const timelineData = [
   },
 ];
 
-export function ReplyIQFeaturesTimeline() {
+export function SellQFeaturesTimeline() {
   return (
     <div className="w-full relative z-20 py-24">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight">The Neural Architecture</h2>
-        <p className="text-neutral-400 max-w-2xl mx-auto text-sm md:text-base">Explore the interconnected subsystems powering the ReplyIQ autonomous engine. Click nodes to view data streams.</p>
+        <p className="text-neutral-400 max-w-2xl mx-auto text-sm md:text-base">Explore the interconnected subsystems powering the SellQ autonomous engine. Click nodes to view data streams.</p>
       </div>
       <RadialOrbitalTimeline timelineData={timelineData} />
     </div>

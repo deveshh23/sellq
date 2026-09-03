@@ -2,10 +2,10 @@
 
 import FlowArt, { FlowSection } from '@/components/ui/story-scroll';
 
-export function ReplyIQStoryScroll() {
+export function SellQStoryScroll() {
   return (
     <div className="relative z-30 w-full bg-black">
-      <FlowArt aria-label="ReplyIQ Story Scroll">
+      <FlowArt aria-label="SellQ Story Scroll">
         
         {/* SECTION 1 */}
         <FlowSection aria-label="The Problem" style={{ backgroundColor: '#2a0a0a', color: '#fff' }}>
@@ -49,8 +49,8 @@ export function ReplyIQStoryScroll() {
         </FlowSection>
 
         {/* SECTION 3 */}
-        <FlowSection aria-label="Meet ReplyIQ" style={{ backgroundColor: '#1e0a3c', color: '#fff' }}>
-          <p className="text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-purple-400 mb-4">03 — Meet ReplyIQ</p>
+        <FlowSection aria-label="Meet SellQ" style={{ backgroundColor: '#1e0a3c', color: '#fff' }}>
+          <p className="text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-purple-400 mb-4">03 — Meet SellQ</p>
           <hr className="my-[2vw] border-none border-t border-purple-500/30" />
           <div className="mt-8 md:mt-16">
             <h2 className="text-5xl md:text-7xl lg:text-[6.5vw] leading-[1.1] font-bold tracking-tight mb-12">
@@ -58,7 +58,7 @@ export function ReplyIQStoryScroll() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">Intelligence OS.</span>
             </h2>
             <div className="text-xl md:text-3xl lg:text-[2.5vw] font-light text-purple-100 leading-snug space-y-8 max-w-4xl">
-              <p>ReplyIQ connects customer interactions, analyzes sentiment, predicts buying intent and automates engagement.</p>
+              <p>SellQ connects customer interactions, analyzes sentiment, predicts buying intent and automates engagement.</p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6">
                 <div className="border border-purple-500/20 bg-purple-900/20 p-6 rounded-2xl text-lg md:text-2xl text-purple-200">
                   <strong className="block text-white mb-2">One platform.</strong>
@@ -92,7 +92,7 @@ export function ReplyIQStoryScroll() {
                 <li className="flex items-center gap-4"><div className="w-3 h-3 rounded-full bg-purple-400"></div> Workflow Automation</li>
               </ul>
               <div className="text-xl md:text-3xl lg:text-[2vw] font-light text-blue-200 leading-snug space-y-8 max-w-xl">
-                <p>ReplyIQ continuously analyzes customer behavior and recommends the next best action.</p>
+                <p>SellQ continuously analyzes customer behavior and recommends the next best action.</p>
                 <p className="text-white font-medium">Turn conversations into revenue opportunities.</p>
               </div>
             </div>
@@ -110,7 +110,7 @@ export function ReplyIQStoryScroll() {
             </h2>
             <div className="text-xl md:text-3xl lg:text-[2.2vw] font-light text-neutral-300 leading-snug space-y-8 max-w-5xl">
               <p>AI doesn't replace teams. <span className="text-white font-medium">It amplifies them.</span></p>
-              <p>ReplyIQ helps businesses:</p>
+              <p>SellQ helps businesses:</p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6 mb-12">
                 <div className="p-4 border border-white/10 rounded-xl bg-white/5">Close deals faster</div>
                 <div className="p-4 border border-white/10 rounded-xl bg-white/5">Retain customers longer</div>

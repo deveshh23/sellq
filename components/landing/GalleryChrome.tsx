@@ -17,7 +17,7 @@ export function Compass() {
     <div className="hidden lg:flex fixed bottom-8 left-8 w-[100px] h-[100px] rounded-full bg-[rgba(20,20,20,0.9)] border border-[var(--border)] z-50 items-center justify-center">
       <div className="absolute w-1 h-1 bg-[var(--compass-dot)] rounded-full z-10" />
       <div className="absolute w-[80%] h-[80%] rounded-full border border-white/20 border-dashed" />
-      <div className="text-[7px] text-[var(--text-dim)] font-mono tracking-[0.15em] absolute bottom-3">REPLYIQ</div>
+      <div className="text-[7px] text-[var(--text-dim)] font-mono tracking-[0.15em] absolute bottom-3">SELLQ</div>
       <div className="absolute top-2 text-[8px] text-[var(--text-dim)]">N</div>
     </div>
   );

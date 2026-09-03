@@ -12,7 +12,7 @@ export function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-4 backdrop-blur-md border-b border-[#1A1A1A] bg-black/50"
     >
       <div className="flex items-center gap-2">
-        <span className="font-heading text-2xl tracking-widest text-white">REPLYIQ</span>
+        <span className="font-heading text-2xl tracking-widest text-white">SELLQ</span>
         <div className="w-2 h-2 rounded-full bg-[#00FF94] shadow-[0_0_8px_#00FF94]" />
       </div>
       <div className="hidden md:flex items-center gap-8 font-mono text-sm uppercase tracking-wider text-[#999999]">
@@ -70,7 +70,7 @@ export function Hero() {
             initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}
             className="font-mono text-lg text-[#999999] max-w-lg leading-relaxed mt-4"
           >
-            ReplyIQ unifies all your customer messages into one AI-powered inbox. Auto-reply, score leads, predict churn — before it's too late.
+            SellQ unifies all your customer messages into one AI-powered inbox. Auto-reply, score leads, predict churn — before it's too late.
           </motion.p>
           
           <motion.div 

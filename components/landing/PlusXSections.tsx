@@ -119,7 +119,7 @@ export function PlusXLeadScoring() {
             <CharReveal text="who to call next." delay={0.3} />
           </h2>
           <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1, delay: 0.6 }} viewport={{ once: true }} className="font-sans text-[17px] font-light text-[var(--text-secondary)] max-w-[380px] leading-[1.8] mb-8">
-            ReplyIQ analyzes every signal to surface exactly which accounts are ready to buy.
+            SellQ analyzes every signal to surface exactly which accounts are ready to buy.
           </motion.p>
           <div className="flex flex-col gap-3 font-sans text-[14px] font-light text-[var(--text-secondary)]">
             {["— Intent detection from conversation keywords", "— Engagement scoring across all channels", "— Recency and response-velocity tracking", "— AI-generated \"why this score\" explanation"].map((f, i) => (

@@ -90,7 +90,7 @@ export const AnimatedFooter: React.FC<FooterProps> = ({
       ref={footerRef}
       className="bg-black text-white relative flex flex-col w-full h-full justify-between min-h-screen select-none overflow-hidden"
     >
-      {/* ReplyIQ Intelligence Nexus Content */}
+      {/* SellQ Intelligence Nexus Content */}
       <div className="container mx-auto flex flex-col items-center justify-center text-center w-full px-4 pt-32 pb-16 z-10 flex-1">
         {headline && (
           <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-blue-500 to-cyan-400">

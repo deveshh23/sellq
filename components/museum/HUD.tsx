@@ -56,7 +56,7 @@ const ROOM_CONTENT = [
   {
     eyebrow: 'INTELLIGENCE NEXUS',
     headline: 'The future of sales\nruns on intelligence.',
-    body: 'Join 500+ businesses already using ReplyIQ to close more deals on autopilot.',
+    body: 'Join 500+ businesses already using SellQ to close more deals on autopilot.',
     cta: 'Start Free Trial →',
     ctaHref: '/dashboard'
   }
@@ -100,7 +100,7 @@ export function HUD({ currentRoom, rooms, transitioning, navigate }: HUDProps) {
     <div style={{ position: 'fixed', inset: 0, zIndex: 10, pointerEvents: 'none', fontFamily: 'Inter, sans-serif' }}>
       
       <div style={{ position: 'absolute', top: 0, left: 0, right: 0, display: 'flex', justifyContent: 'space-between', padding: '20px 28px', alignItems: 'center' }}>
-        <span style={{ color: '#fff', fontSize: 16, fontWeight: 500 }}>ReplyIQ</span>
+        <span style={{ color: '#fff', fontSize: 16, fontWeight: 500 }}>SellQ</span>
         <a href="/dashboard" style={{ color: 'rgba(255,255,255,0.4)', fontSize: 13, textDecoration: 'none', pointerEvents: 'auto' }}>Skip to Dashboard →</a>
       </div>
 

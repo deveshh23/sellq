@@ -31,7 +31,7 @@ export function AboutSection() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-8"
         >
-          Why ReplyIQ Exists
+          Why SellQ Exists
         </motion.h2>
         
         <motion.p
@@ -41,8 +41,8 @@ export function AboutSection() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-lg md:text-xl text-neutral-400 max-w-3xl mx-auto mb-16 leading-relaxed font-light"
         >
-          ReplyIQ was built to help modern businesses transform customer conversations into actionable revenue intelligence. 
-          Instead of relying on disconnected tools and manual workflows, ReplyIQ uses AI to score leads, analyze sentiment, automate engagement and predict churn before it happens.
+          SellQ was built to help modern businesses transform customer conversations into actionable revenue intelligence. 
+          Instead of relying on disconnected tools and manual workflows, SellQ uses AI to score leads, analyze sentiment, automate engagement and predict churn before it happens.
         </motion.p>
       </div>
 

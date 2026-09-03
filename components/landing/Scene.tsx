@@ -306,7 +306,7 @@ function Room5CTA() {
       <Sparkles count={400} scale={20} size={0.6} speed={0.5} opacity={0.8} color="#7C3AED" />
       <pointLight position={[-2, 2, 2]} color="#7C3AED" intensity={8} distance={30} />
       <pointLight position={[2, -2, 2]} color="#3B82F6" intensity={8} distance={30} />
-      <Text position={[0, 2, 5]} fontSize={2} color="white">ReplyIQ</Text>
+      <Text position={[0, 2, 5]} fontSize={2} color="white">SellQ</Text>
     </group>
   );
 }

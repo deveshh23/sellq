@@ -15,13 +15,13 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: 'ReplyIQ AI — Unified AI Inbox',
+  title: 'SellQ AI — Unified AI Inbox',
   description: 'AI-powered customer communication platform',
   icons: {
     icon: '/favicon.ico',
   },
   openGraph: {
-    title: 'ReplyIQ AI — Unified AI Inbox',
+    title: 'SellQ AI — Unified AI Inbox',
     description: 'AI-powered customer communication platform',
     type: 'website',
   },

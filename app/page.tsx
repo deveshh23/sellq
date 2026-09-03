@@ -7,8 +7,8 @@ import { SplineScene } from '@/components/ui/splite'
 import { Spotlight } from '@/components/ui/spotlight'
 import { GLSLHills } from '@/components/ui/glsl-hills'
 import { ContainerScroll } from '@/components/ui/container-scroll-animation'
-import { ReplyIQStoryScroll } from '@/components/landing/ReplyIQStoryScroll'
-import { ReplyIQCpuFeatures } from '@/components/ui/demo-cpu'
+import { SellQStoryScroll } from '@/components/landing/SellQStoryScroll'
+import { SellQCpuFeatures } from '@/components/ui/demo-cpu'
 import { LandingNavbar } from '@/components/landing/LandingNavbar'
 import { AboutSection } from '@/components/landing/AboutSection'
 import { ContactSection } from '@/components/landing/ContactSection'
@@ -53,7 +53,7 @@ export default function Page() {
             className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-md mb-8 pointer-events-auto shadow-[0_0_20px_rgba(255,255,255,0.05)]"
           >
             <span className="w-2 h-2 rounded-full bg-purple-400 animate-pulse shadow-[0_0_10px_rgba(167,139,250,0.8)]" />
-            <span className="text-xs font-semibold text-white/90 tracking-widest uppercase">ReplyIQ OS v2.0 Live</span>
+            <span className="text-xs font-semibold text-white/90 tracking-widest uppercase">SellQ OS v2.0 Live</span>
           </motion.div>
 
           <motion.h1 
@@ -123,7 +123,7 @@ export default function Page() {
                 </span>
               </h1>
               <p className="text-neutral-400 text-base md:text-xl max-w-3xl mx-auto mt-6 font-light leading-relaxed">
-                ReplyIQ unifies AI Lead Scoring, Sentiment Analysis, Workflow Automation, AI Sales Agents, Churn Prediction and Customer Intelligence into a single platform.
+                SellQ unifies AI Lead Scoring, Sentiment Analysis, Workflow Automation, AI Sales Agents, Churn Prediction and Customer Intelligence into a single platform.
               </p>
             </>
           }
@@ -134,7 +134,7 @@ export default function Page() {
             <div className="w-64 border-r border-white/5 hidden md:flex flex-col p-4 bg-black/40">
               <div className="flex items-center gap-2 mb-10 px-2">
                 <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-purple-500 to-blue-600 shadow-lg shadow-purple-500/20"></div>
-                <span className="font-bold text-xl tracking-wide">ReplyIQ</span>
+                <span className="font-bold text-xl tracking-wide">SellQ</span>
               </div>
               <nav className="space-y-1.5 text-sm text-neutral-400 font-medium">
                 <div className="px-3 py-2.5 rounded-lg bg-white/10 text-white flex items-center gap-3">
@@ -202,11 +202,11 @@ export default function Page() {
       </div>
 
       {/* STORY SCROLL SECTION */}
-      <ReplyIQStoryScroll />
+      <SellQStoryScroll />
 
       {/* NEURAL CORE CPU FEATURES SECTION (Transparent to show GLSL) */}
       <div className="relative z-10 w-full min-h-screen bg-transparent flex flex-col items-center justify-center border-t border-white/5">
-        <ReplyIQCpuFeatures />
+        <SellQCpuFeatures />
       </div>
 
       </div>
@@ -221,7 +221,7 @@ export default function Page() {
               LIVE PLATFORM
             </div>
             <h2 className="text-[48px] font-extrabold text-white tracking-[-0.03em] leading-tight mb-4">
-              See ReplyIQ in action
+              See SellQ in action
             </h2>
             <p className="text-[18px] text-[#9ca3af] max-w-2xl">
               Every feature works in real time. No demos. No mockups. Just the product.
@@ -471,9 +471,9 @@ export default function Page() {
           <div className="flex flex-col items-center md:items-start gap-2">
             <div className="flex items-center gap-2">
               <div className="w-6 h-6 rounded-md bg-gradient-to-br from-purple-500 to-blue-600"></div>
-              <span className="text-white font-bold tracking-wide">ReplyIQ</span>
+              <span className="text-white font-bold tracking-wide">SellQ</span>
             </div>
-            <p className="text-[13px] text-gray-500">© 2026 ReplyIQ AI. All rights reserved.</p>
+            <p className="text-[13px] text-gray-500">© 2026 SellQ AI. All rights reserved.</p>
           </div>
           
           <div className="flex gap-6 text-[13px] text-gray-500">

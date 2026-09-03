@@ -1,9 +1,9 @@
-# ReplyIQ AI — Premium Co-pilot SaaS Hub
+# SellQ AI — Premium Co-pilot SaaS Hub
 
-![ReplyIQ AI Cover](https://via.placeholder.com/1200x630/0a0e1a/8b5cf6?text=ReplyIQ+AI+Dashboard)
+![SellQ AI Cover](https://via.placeholder.com/1200x630/0a0e1a/8b5cf6?text=SellQ+AI+Dashboard)
 
 **One inbox. Every customer. AI-powered replies.**
-ReplyIQ unifies WhatsApp, Instagram, and Website Chat into one AI-powered inbox that replies, detects leads, and never sleeps. Built with a stunning dark-mode glassmorphic aesthetic.
+SellQ unifies WhatsApp, Instagram, and Website Chat into one AI-powered inbox that replies, detects leads, and never sleeps. Built with a stunning dark-mode glassmorphic aesthetic.
 
 ## 🚀 Features
 
@@ -52,12 +52,12 @@ Navigate to `http://localhost:3000`.
 ## 🧪 Demo Mode
 
 To instantly explore the fully seeded experience without external setup, use the **Demo Login**:
-- **Email:** `demo@replyiq.ai`
+- **Email:** `demo@sellq.ai`
 - **Password:** `demo1234`
 - Click **"✨ Try Demo"** on the login screen for an automated login experience.
 
 ## 📱 Mobile Responsiveness
-ReplyIQ features a tailored mobile layout with a bottom tab bar and optimized single-column inbox for on-the-go agent support. All cards stack gracefully, and touch targets are optimized for mobile.
+SellQ features a tailored mobile layout with a bottom tab bar and optimized single-column inbox for on-the-go agent support. All cards stack gracefully, and touch targets are optimized for mobile.
 
 ## 📄 License
 MIT License

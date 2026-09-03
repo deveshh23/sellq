@@ -149,7 +149,7 @@ export default function RevenueIntelligence() {
         <div className="relative z-10">
           <h4 className="text-sm font-bold text-white mb-1">AI Growth Insight</h4>
           <p className="text-sm text-zinc-300 leading-relaxed max-w-4xl">
-            ReplyIQ detected that WhatsApp messages sent between 6–8 PM on weekdays generate 3.2x more revenue than Email at any time. Shifting 30% of your Email outreach to WhatsApp evening slots could generate an additional <span className="text-emerald-400 font-bold">₹12,400</span> this month.
+            SellQ detected that WhatsApp messages sent between 6–8 PM on weekdays generate 3.2x more revenue than Email at any time. Shifting 30% of your Email outreach to WhatsApp evening slots could generate an additional <span className="text-emerald-400 font-bold">₹12,400</span> this month.
           </p>
         </div>
       </div>

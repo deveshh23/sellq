@@ -128,7 +128,7 @@ export default function OnboardingPage() {
           <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-violet-600 to-cyan-500 shadow-lg shadow-violet-500/20 flex items-center justify-center">
             <Zap size={16} className="text-white" />
           </div>
-          <span className="font-bold text-xl text-white tracking-wide">ReplyIQ</span>
+          <span className="font-bold text-xl text-white tracking-wide">SellQ</span>
         </div>
         
         <div className="hidden md:flex items-center gap-3">
@@ -388,7 +388,7 @@ export default function OnboardingPage() {
             >
               <div className="mb-8">
                 <span className="text-[10px] font-bold tracking-widest uppercase text-violet-400 mb-2 block">Step 4 of 4</span>
-                <h2 className="text-3xl font-bold tracking-tight text-white mb-2">ReplyIQ Configuration</h2>
+                <h2 className="text-3xl font-bold tracking-tight text-white mb-2">SellQ Configuration</h2>
                 <p className="text-zinc-400 text-sm">Select the AI revenue features to enable for your workspace.</p>
               </div>
 
@@ -443,7 +443,7 @@ export default function OnboardingPage() {
                 <CheckCircle2 size={40} className="text-white" />
               </motion.div>
               
-              <h2 className="text-4xl font-bold tracking-tight text-white mb-4">Your ReplyIQ Workspace Is Ready</h2>
+              <h2 className="text-4xl font-bold tracking-tight text-white mb-4">Your SellQ Workspace Is Ready</h2>
               <p className="text-zinc-400 mb-8 text-lg">
                 <span className="text-white font-semibold">{formData.workspaceName || 'Your Workspace'}</span> has been successfully provisioned.
               </p>

@@ -62,7 +62,7 @@ export function VentureAIBrain() {
           <div className="font-sans text-xs font-semibold text-[var(--purple-light)] border border-[var(--purple-primary)]/30 bg-[var(--purple-primary)]/10 rounded-full px-3 py-1 mb-6">The Solution</div>
           <h2 className="font-sans font-semibold text-[clamp(32px,4vw,56px)] tracking-[-0.02em] text-white mb-6">One AI brain. Every revenue signal.</h2>
           <p className="font-sans text-[16px] text-[var(--text-secondary)] max-w-[600px] leading-[1.7]">
-            ReplyIQ connects across your entire customer journey — from first message to closed deal.
+            SellQ connects across your entire customer journey — from first message to closed deal.
           </p>
         </motion.div>
 
@@ -102,7 +102,7 @@ export function VentureAIBrain() {
             className="relative z-10 w-[120px] h-[120px] rounded-full bg-[var(--surface-elevated)] border-2 border-[var(--purple-primary)] flex items-center justify-center shadow-[0_0_40px_rgba(124,58,237,0.3)]"
           >
             <div className="absolute inset-0 rounded-full border border-[var(--purple-light)] animate-ping opacity-20" />
-            <span className="font-sans font-semibold text-white text-center text-sm">ReplyIQ<br/>AI</span>
+            <span className="font-sans font-semibold text-white text-center text-sm">SellQ<br/>AI</span>
           </motion.div>
         </div>
 
@@ -137,7 +137,7 @@ export function VentureLeadScoring() {
           <div className="font-sans text-xs font-semibold text-[var(--purple-light)] border border-[var(--purple-primary)]/30 bg-[var(--purple-primary)]/10 rounded-full px-3 py-1 mb-6">AI Lead Scoring</div>
           <h2 className="font-sans font-semibold text-[clamp(32px,4vw,48px)] tracking-[-0.02em] text-white mb-6 leading-[1.1]">Know exactly who to call next.</h2>
           <p className="font-sans text-[16px] text-[var(--text-secondary)] max-w-[500px] leading-[1.7] mb-8">
-            ReplyIQ analyzes every signal — message frequency, keyword intent, sentiment 
+            SellQ analyzes every signal — message frequency, keyword intent, sentiment 
             shifts, response speed — and gives every lead a real-time AI score.
           </p>
           <ul className="space-y-4 font-sans text-[15px] text-[var(--text-primary)]">

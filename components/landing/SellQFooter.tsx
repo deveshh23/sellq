@@ -2,13 +2,13 @@
 
 import AnimatedFooter from "@/components/ui/animated-footer";
 
-export function ReplyIQFooter() {
+export function SellQFooter() {
   return (
     <div className="relative z-30 w-full border-t border-white/10 bg-black">
       <AnimatedFooter
         headline="THE FUTURE OF REVENUE RUNS ON INTELLIGENCE"
-        subheadline="ReplyIQ combines AI Lead Scoring, Sentiment Analysis, Workflow Automation and Churn Prediction into a unified intelligence platform."
-        ctaText="Start Using ReplyIQ"
+        subheadline="SellQ combines AI Lead Scoring, Sentiment Analysis, Workflow Automation and Churn Prediction into a unified intelligence platform."
+        ctaText="Start Using SellQ"
         leftLinks={[
           { href: "#", label: "AI Lead Scoring" },
           { href: "#", label: "AI Sales Agent" },
@@ -19,7 +19,7 @@ export function ReplyIQFooter() {
           { href: "#", label: "Sentiment Analysis" },
           { href: "#", label: "Multi-Tenant SaaS" },
         ]}
-        copyrightText="ReplyIQ 2026. All Rights Reserved."
+        copyrightText="SellQ 2026. All Rights Reserved."
         barCount={35}
       />
     </div>

@@ -17,7 +17,7 @@ export function VirtualHero() {
       {/* Navbar */}
       <nav className="fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-8 py-6 bg-gradient-to-b from-[rgba(10,10,10,0.9)] to-transparent">
         <div className="flex items-center gap-3">
-          <span className="font-heading font-bold text-[22px] tracking-[0.2em] text-white">REPLYIQ</span>
+          <span className="font-heading font-bold text-[22px] tracking-[0.2em] text-white">SELLQ</span>
           <div className="w-1.5 h-1.5 rounded-full bg-[var(--compass-dot)] animate-pulse" />
         </div>
         <div className="flex items-center gap-6 font-mono text-[11px] tracking-[0.15em] uppercase text-white">
@@ -54,7 +54,7 @@ export function VirtualHero() {
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}
           className="font-mono text-[13px] text-[var(--text-dim)] max-w-[480px] mt-10 leading-relaxed"
         >
-          ReplyIQ unifies all your customer messages into one AI-powered inbox.
+          SellQ unifies all your customer messages into one AI-powered inbox.
           Auto-reply in your brand voice. Score leads. Predict churn.
         </motion.p>
 

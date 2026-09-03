@@ -26,7 +26,7 @@ export function VentureNavbar() {
               <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </div>
-          <span className="font-sans font-semibold text-white tracking-tight">ReplyIQ</span>
+          <span className="font-sans font-semibold text-white tracking-tight">SellQ</span>
         </Link>
         <div className="hidden md:flex items-center gap-8 font-sans text-sm text-[var(--text-secondary)]">
           <Link href="#features" className="hover:text-white transition-colors">Features</Link>
@@ -101,7 +101,7 @@ export function VentureHero() {
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.25, duration: 0.6 }}
             className="font-sans text-[18px] leading-[1.7] text-[var(--text-secondary)] max-w-[540px]"
           >
-            ReplyIQ is the AI operating system that scores your leads, predicts churn before it
+            SellQ is the AI operating system that scores your leads, predicts churn before it
             happens, automates follow-ups, and closes deals — while you sleep.
           </motion.p>
 

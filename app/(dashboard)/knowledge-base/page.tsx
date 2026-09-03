@@ -67,7 +67,7 @@ export default function KnowledgeBasePage() {
   }, []);
 
   useEffect(() => {
-    document.title = "Knowledge Base — ReplyIQ AI";
+    document.title = "Knowledge Base — SellQ AI";
   }, []);
 
   // Compute metrics
@@ -91,7 +91,7 @@ export default function KnowledgeBasePage() {
     // Simulate API delay for Supabase save
     await new Promise((resolve) => setTimeout(resolve, 800));
     
-    localStorage.setItem('replyiq_kb_content', content);
+    localStorage.setItem('sellq_kb_content', content);
     const now = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
     setLastSaved(`Today at ${now}`);
     setIsSaving(false);

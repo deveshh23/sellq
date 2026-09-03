@@ -19,7 +19,7 @@ export default function InboxPage() {
   const updateAIDraft = useInboxStore((state) => state.updateConversationAIDraft);
 
   useEffect(() => {
-    document.title = "Inbox — ReplyIQ AI";
+    document.title = "Inbox — SellQ AI";
   }, []);
 
   useEffect(() => {

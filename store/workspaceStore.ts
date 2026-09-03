@@ -56,7 +56,7 @@ export const useWorkspaceStore = create<WorkspaceState>()(
         set((state) => ({ workspaces: [...state.workspaces, workspace] })),
     }),
     {
-      name: 'replyiq-workspace-storage',
+      name: 'sellq-workspace-storage',
     }
   )
 );

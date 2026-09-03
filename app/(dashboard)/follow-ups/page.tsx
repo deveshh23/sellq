@@ -23,7 +23,7 @@ export default function FollowUpsPage() {
   });
 
   useEffect(() => {
-    document.title = "Follow-Ups — ReplyIQ AI";
+    document.title = "Follow-Ups — SellQ AI";
   }, []);
 
   const pending = followUps.filter(f => f.status === 'pending');

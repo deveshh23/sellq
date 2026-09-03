@@ -54,7 +54,7 @@ export function LandingNavbar() {
           {/* LOGO */}
           <Link href="/" className="flex items-center gap-2 group">
             <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-purple-500 to-blue-600 shadow-lg shadow-purple-500/20 group-hover:shadow-purple-500/40 transition-shadow"></div>
-            <span className="font-bold text-xl tracking-wide text-white">ReplyIQ</span>
+            <span className="font-bold text-xl tracking-wide text-white">SellQ</span>
           </Link>
 
           {/* DESKTOP LINKS - CENTER */}
@@ -123,7 +123,7 @@ export function LandingNavbar() {
             <div className="flex items-center justify-between mb-12">
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-purple-500 to-blue-600"></div>
-                <span className="font-bold text-xl text-white">ReplyIQ</span>
+                <span className="font-bold text-xl text-white">SellQ</span>
               </div>
               <button 
                 onClick={() => setMobileOpen(false)}

@@ -5,7 +5,7 @@ import { Scene } from './Scene'
 import { HUD } from './HUD'
 
 export const ROOMS = [
-  { id: 0, name: 'ReplyIQ HQ', subtitle: 'LOBBY', color: '#7C3AED', z: 0 },
+  { id: 0, name: 'SellQ HQ', subtitle: 'LOBBY', color: '#7C3AED', z: 0 },
   { id: 1, name: 'Lead Scoring Chamber', subtitle: 'AI LEAD SCORING', color: '#3B82F6', z: -35 },
   { id: 2, name: 'Sentiment Intelligence Lab', subtitle: 'SENTIMENT AI', color: '#8B5CF6', z: -70 },
   { id: 3, name: 'Sales Agent Command Center', subtitle: 'AI SALES AGENT', color: '#06B6D4', z: -105 },
