@@ -1,7 +1,8 @@
 import { useInboxStore } from '../../store/inboxStore';
 import { useAIModeStore } from '../../store/aiModeStore';
 import { useNotificationStore } from '../../store/notificationStore';
-import { detectSentiment, detectLead, generateReply } from '../ai/gemini';
+import { usePaymentProposalStore } from '../../store/paymentProposalStore';
+import { detectSentiment, detectLead, generateReply, proposePayment } from '../ai/gemini';
 import { Conversation, Message, Lead, Channel } from '../../types';
 
 // ============================================
@@ -184,6 +185,30 @@ export async function generateSimulatedMessage(_userId?: string): Promise<{
         ? `${leadData.reason} — ${contact.company || 'Prospect'} via ${template.channel}`
         : `"${template.content.substring(0, 60)}..." via ${template.channel}`,
     });
+
+    // 3b. Payment Proposal Detection (only for high-intent leads)
+    if (leadData.isLead) {
+      try {
+        const paymentProposal = await proposePayment(formattedHistory);
+        if (paymentProposal) {
+          const existing = usePaymentProposalStore.getState().getActiveProposal(conversationId);
+          if (!existing) {
+            usePaymentProposalStore.getState().addProposal({
+              conversationId,
+              productId: paymentProposal.productId,
+              draftMessage: paymentProposal.draftMessage,
+            });
+            useNotificationStore.getState().addNotification({
+              type: 'system',
+              title: '💰 Payment Proposal Ready',
+              description: `${contact.name} is ready to pay. AI drafted a payment proposal.`,
+            });
+          }
+        }
+      } catch (e) {
+        console.error('[Simulator] Payment proposal detection failed:', e);
+      }
+    }
 
     // 4. Auto-pilot: dispatch AI reply if enabled
     if (aiSettings.autoPilot && aiDraft) {

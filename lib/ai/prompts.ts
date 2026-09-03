@@ -99,3 +99,22 @@ Return ONLY valid JSON (no markdown, no code fences):
   ],
   "recommendedAction": "One specific, actionable next step for this lead (e.g. 'Send enterprise pricing deck with custom compliance add-on')"
 }`;
+
+export const PROPOSE_PAYMENT_PROMPT = `You are a sales AI agent for SellQ. Analyze the conversation below for EXPLICIT purchase intent — the customer is ready to buy, pay, or complete a checkout RIGHT NOW.
+
+Available products (select ONLY from this list, never make up a product or price):
+- prod_starter_1mo: Starter Plan, 5 agents (₹499)
+- prod_growth_1mo: Growth Plan, 25 agents (₹1,499)
+- prod_pro_1mo: Pro Plan, unlimited agents (₹2,999)
+- prod_enterprise_1mo: Enterprise Plan, compliance features (₹5,999)
+- prod_addon_consulting: AI Strategy Consulting Session (₹199)
+
+Conversation:
+{{HISTORY}}
+
+If the customer clearly wants to purchase/pay for something, respond with JSON only:
+{"shouldPropose": true, "productId": "prod_xxx", "productName": "Plan Name", "draftMessage": "I can send you a payment link for [Product] — want me to go ahead?"}
+
+If there is no clear purchase intent, respond with JSON only:
+{"shouldPropose": false}
+`;

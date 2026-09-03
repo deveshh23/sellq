@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import { useInboxStore } from '../../store/inboxStore';
 import { useAIModeStore } from '../../store/aiModeStore';
-import { generateReply as generateAIReply } from '../ai/gemini';
+import { usePaymentProposalStore } from '../../store/paymentProposalStore';
+import { generateReply as generateAIReply, proposePayment } from '../ai/gemini';
 
 export function useAIReply() {
   const [isGenerating, setIsGenerating] = useState(false);
   const updateDraft = useInboxStore((state) => state.updateConversationAIDraft);
   const aiSettings = useAIModeStore((state) => state.settings);
+  const addProposal = usePaymentProposalStore((state) => state.addProposal);
 
   const generateReply = async (conversationId: string, messageContent: string, toneOverride?: string) => {
     setIsGenerating(true);
@@ -18,6 +20,19 @@ export function useAIReply() {
         toneOverride || aiSettings.tone
       );
       updateDraft(conversationId, draft);
+
+      const proposal = await proposePayment(formattedHistory);
+      if (proposal) {
+        const existing = usePaymentProposalStore.getState().getActiveProposal(conversationId);
+        if (!existing) {
+          addProposal({
+            conversationId,
+            productId: proposal.productId,
+            draftMessage: proposal.draftMessage,
+          });
+        }
+      }
+
       return draft;
     } catch (e) {
       console.error(e);

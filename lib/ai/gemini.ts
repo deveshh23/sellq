@@ -8,6 +8,7 @@ import {
   EXTRACT_PROMISES_PROMPT,
   DETECT_APPOINTMENT_PROMPT,
   GENERATE_FOLLOWUP_PROMPT,
+  PROPOSE_PAYMENT_PROMPT,
 } from "./prompts";
 
 // The user mentioned an API key in the prompt, let's use the environment variable
@@ -225,4 +226,44 @@ export async function generateFollowUp(
     console.error("Gemini Generate FollowUp Error:", error);
     return `Hi ${contactName}, I wanted to follow up on our recent conversation. Let me know if you need any further assistance!`;
   }
+}
+
+export interface PaymentProposal {
+  productId: string;
+  productName: string;
+  draftMessage: string;
+}
+
+export async function proposePayment(
+  conversationHistory: { role: string; content: string }[]
+): Promise<PaymentProposal | null> {
+  await delay(200);
+
+  const historyText = conversationHistory
+    .map(m => `${m.role}: ${m.content}`)
+    .join("\n");
+
+  const prompt = PROPOSE_PAYMENT_PROMPT.replace('{{HISTORY}}', historyText);
+
+  try {
+    const result = await geminiFlash.generateContent(prompt);
+    let text = result.response.text();
+    if (text.startsWith('```json')) {
+      text = text.replace(/```json\n?/, '').replace(/\n?```/, '');
+    } else if (text.startsWith('```')) {
+      text = text.replace(/```\n?/, '').replace(/\n?```/, '');
+    }
+    const parsed = JSON.parse(text);
+    if (parsed.shouldPropose && parsed.productId && parsed.draftMessage) {
+      return {
+        productId: parsed.productId,
+        productName: parsed.productName,
+        draftMessage: parsed.draftMessage,
+      };
+    }
+  } catch (error) {
+    console.error("Gemini Propose Payment Error:", error);
+  }
+
+  return null;
 }

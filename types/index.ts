@@ -134,3 +134,17 @@ export interface PaymentAttempt {
   errorMessage?: string;
   createdAt: string;
 }
+
+export type PaymentProposalStatus = 'proposed' | 'processing' | 'sent' | 'failed' | 'dismissed';
+
+export interface PaymentProposal {
+  id: string;
+  conversationId: string;
+  productId: string;
+  productName: string;
+  amountPaise: number;
+  currency: string;
+  draftMessage: string;
+  status: PaymentProposalStatus;
+  createdAt: string;
+}

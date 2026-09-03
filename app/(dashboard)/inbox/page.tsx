@@ -9,6 +9,7 @@ import SummaryPanel from '../../../components/ai/SummaryPanel';
 import SmartReplySuggestions from '../../../components/ai/SmartReplySuggestions';
 import PromisesPanel from '../../../components/inbox/PromisesPanel';
 import AppointmentPanel from '../../../components/inbox/AppointmentPanel';
+import PaymentPanel from '../../../components/inbox/PaymentPanel';
 import { useConversations } from '../../../lib/hooks/useConversations';
 import { useInboxStore } from '../../../store/inboxStore';
 import { Sparkles, BrainCircuit } from 'lucide-react';
@@ -92,6 +93,9 @@ export default function InboxPage() {
 
           {/* Appointment Panel */}
           <AppointmentPanel conversation={activeConversation} />
+
+          {/* Payment Proposal Panel — AI-gated checkout flow */}
+          <PaymentPanel conversation={activeConversation} />
 
           {/* Quick Click Suggestions */}
           <div className="shrink-0">
