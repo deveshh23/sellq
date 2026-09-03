@@ -50,6 +50,14 @@ export const PRODUCT_CATALOG: readonly Product[] = [
     currency: CURRENCY,
     metadata: { service: 'consulting', duration: '60 minutes' },
   },
+  {
+    productId: 'prod_simulate_failure',
+    name: '[TEST] Simulate Payment Failure',
+    description: 'Test product that triggers a simulated Razorpay API error for failure-path demos. Not available for real customers.',
+    amountPaise: 100,
+    currency: CURRENCY,
+    metadata: { simulateFailure: true, testOnly: true },
+  },
 ] as const;
 
 export function getProductById(productId: string): Product | undefined {

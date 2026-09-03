@@ -118,3 +118,19 @@ export interface Workspace {
   isActive: boolean;
   createdAt: string;
 }
+
+export type PaymentStatus = 'pending' | 'paid' | 'failed';
+
+export interface PaymentAttempt {
+  id: string;
+  conversationId: string;
+  productId: string;
+  productName?: string;
+  amount: number;
+  currency: string;
+  status: PaymentStatus;
+  razorpayLinkId?: string;
+  razorpayPaymentLinkUrl?: string;
+  errorMessage?: string;
+  createdAt: string;
+}
