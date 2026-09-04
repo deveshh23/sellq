@@ -1,9 +1,10 @@
 'use client';
 
 import React, { useState } from 'react';
-import { CreditCard, CheckCircle2, Clock, Sparkles, Loader2, AlertCircle } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { CreditCard, CheckCircle2, Clock, Loader2, AlertCircle, Zap } from 'lucide-react';
+import { motion } from 'framer-motion';
 import { usePaymentProposalStore } from '../../store/paymentProposalStore';
+import { useInboxStore } from '../../store/inboxStore';
 import { useToast } from '../shared/ToastProvider';
 import { Conversation } from '../../types';
 import { formatCurrency } from '../../lib/utils';
@@ -18,10 +19,44 @@ export default function PaymentPanel({ conversation }: PaymentPanelProps) {
     s.getActiveProposal(conversation.id)
   );
   const clearProposal = usePaymentProposalStore((s) => s.clearProposal);
+  const addProposal = usePaymentProposalStore((s) => s.addProposal);
   const updateStatus = usePaymentProposalStore((s) => s.updateStatus);
+  const updateAIDraft = useInboxStore((s) => s.updateConversationAIDraft);
   const [isCreating, setIsCreating] = useState(false);
 
-  if (!activeProposal) return null;
+  if (!activeProposal) {
+    return (
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="flex flex-col gap-3 shrink-0"
+      >
+        <div className="bg-zinc-900/30 border border-white/5 rounded-xl p-4 flex flex-col gap-2.5">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2 text-xs font-bold text-white uppercase tracking-wider">
+              <CreditCard size={14} className="text-zinc-500" />
+              Payment Proposals
+            </div>
+            <span className="text-[10px] text-zinc-500">No active proposal</span>
+          </div>
+
+          <button
+            onClick={() =>
+              addProposal({
+                conversationId: conversation.id,
+                productId: 'prod_simulate_failure',
+                draftMessage: 'I can send you a payment link for the AI Strategy Consulting Session — want me to go ahead?',
+              })
+            }
+            className="w-full flex items-center justify-center gap-1.5 py-2 rounded-lg border border-rose-500/30 bg-rose-500/5 hover:bg-rose-500/10 text-[10px] font-bold uppercase tracking-wider text-rose-300 transition-colors"
+          >
+            <Zap size={12} className="text-rose-400" />
+            Simulate Failure (Demo)
+          </button>
+        </div>
+      </motion.div>
+    );
+  }
 
   const handleConfirm = async () => {
     if (!activeProposal) return;
@@ -55,13 +90,25 @@ export default function PaymentPanel({ conversation }: PaymentPanelProps) {
       if (data.paymentLinkUrl) {
         window.open(data.paymentLinkUrl, '_blank', 'noopener,noreferrer');
       }
-    } catch (error: any) {
+    } catch (error: unknown) {
+      const errorMsg =
+        typeof (error as { message?: string })?.message === 'string'
+          ? (error as { message: string }).message
+          : 'Failed to create payment link';
+
       updateStatus(activeProposal.id, 'failed');
       clearProposal(conversation.id);
+
+      // Draft a recovery message in the AI draft area
+      updateAIDraft(
+        conversation.id,
+        'Something went wrong creating that link, let me try again — I can also send you a manual invoice. Would you prefer that, or I can retry the payment link?'
+      );
+
       toast({
         type: 'error',
         title: 'Payment Link Failed',
-        description: error.message,
+        description: errorMsg,
       });
     } finally {
       setIsCreating(false);
@@ -98,7 +145,7 @@ export default function PaymentPanel({ conversation }: PaymentPanelProps) {
         <div className="space-y-3">
           <div className="p-2.5 bg-zinc-950/30 rounded-lg border border-white/5">
             <p className="text-xs text-zinc-300 italic leading-relaxed">
-              "{activeProposal.draftMessage}"
+              &quot;{activeProposal.draftMessage}&quot;
             </p>
           </div>
 

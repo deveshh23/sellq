@@ -131,8 +131,11 @@ export function ReplyComposer({ conversation, onSend }: ReplyComposerProps) {
         title: 'Payment Link Created',
         description: `Link sent to ${conversation.contactName}.`,
       });
-    } catch (error: any) {
-      const errorMsg = error.message || 'Unknown error';
+    } catch (error: unknown) {
+      const errorMsg =
+        typeof (error as { message?: string })?.message === 'string'
+          ? (error as { message: string }).message
+          : 'Unknown error';
       updateProposalStatus(activeProposal.id, 'failed');
 
       // Draft a recovery message for the agent to review
@@ -182,7 +185,7 @@ export function ReplyComposer({ conversation, onSend }: ReplyComposerProps) {
             </span>
           </div>
           <p className="text-xs text-zinc-300 italic leading-relaxed">
-            "{activeProposal.draftMessage}"
+            &quot;{activeProposal.draftMessage}&quot;
           </p>
           <div className="flex gap-2">
             <Button

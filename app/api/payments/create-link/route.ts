@@ -68,7 +68,7 @@ export async function POST(req: Request) {
     );
   }
 
-  let razorpayLink: any = null;
+  let razorpayLink: unknown = null;
 
   let customerName = 'Valued Customer';
   let customerEmail = 'customer@sellq.ai';
@@ -84,7 +84,7 @@ export async function POST(req: Request) {
       customerName = conv.contact_name || customerName;
       customerEmail = conv.contact_email || customerEmail;
     }
-  } catch (e) {
+  } catch {
     /* non-critical — fall back to generic customer info */
   }
 
@@ -109,10 +109,10 @@ export async function POST(req: Request) {
         conversation_id: conversationId,
       },
     });
-  } catch (error: any) {
+  } catch (error: unknown) {
     const errorMsg =
-      typeof error?.message === 'string'
-        ? error.message
+      typeof (error as { message?: string })?.message === 'string'
+        ? (error as { message: string }).message
         : 'Razorpay Payment Link API call failed.';
 
     const attempt: PaymentAttempt = {
@@ -136,8 +136,12 @@ export async function POST(req: Request) {
   }
 
   const linkUrl: string | undefined =
-    razorpayLink?.short_url || razorpayLink?.url || razorpayLink?.long_url;
-  const linkId: string | undefined = razorpayLink?.id || razorpayLink?.paymentLinkId;
+    (razorpayLink as { short_url?: string; url?: string; long_url?: string })?.short_url ||
+    (razorpayLink as { short_url?: string; url?: string; long_url?: string })?.url ||
+    (razorpayLink as { short_url?: string; url?: string; long_url?: string })?.long_url;
+  const linkId: string | undefined =
+    (razorpayLink as { id?: string; paymentLinkId?: string })?.id ||
+    (razorpayLink as { id?: string; paymentLinkId?: string })?.paymentLinkId;
 
   const attempt: PaymentAttempt = {
     id: `pa-${Date.now()}`,

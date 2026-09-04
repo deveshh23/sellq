@@ -5,8 +5,8 @@ import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  MessageSquare, Zap, BarChart2, Brain, Settings2, 
-  LogOut, ChevronLeft, ChevronRight, Check, X, ShieldAlert, CheckSquare, Megaphone, GitMerge, CalendarClock, RefreshCw, ChevronDown, Plus, Bot, Mic, Lightbulb, Users
+  MessageSquare, Zap, BarChart2, Brain, Settings2,
+  LogOut, ChevronLeft, ChevronRight, Check, X, ShieldAlert, CheckSquare, Megaphone, GitMerge, CalendarClock, RefreshCw, ChevronDown, Plus, Bot, Mic, Lightbulb, Users, CreditCard
 } from 'lucide-react';
 import { useAIModeStore } from '../../store/aiModeStore';
 import { usePromiseStore } from '../../store/promiseStore';
@@ -63,6 +63,7 @@ export function Sidebar({ collapsed, setCollapsed }: SidebarProps) {
     { name: 'Analytics', href: '/analytics', icon: BarChart2 },
     { name: 'Churn Shield', href: '/churn', icon: ShieldAlert, badge: '2', badgeColor: 'red' },
     { name: 'Knowledge Base', href: '/knowledge-base', icon: Brain },
+    { name: 'Payments', href: '/payments', icon: CreditCard, badgeColor: 'emerald' },
     { name: 'Settings', href: '/settings', icon: Settings2 },
   ];
 
