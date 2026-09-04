@@ -13,11 +13,14 @@ import {
 
 // The user mentioned an API key in the prompt, let's use the environment variable
 const apiKey = process.env.NEXT_PUBLIC_GEMINI_API_KEY || process.env.GEMINI_API_KEY || "";
+const apiUrl = process.env.GEMINI_API_URL || process.env.NEXT_PUBLIC_GEMINI_API_URL || "https://gateway.kilo.ai/v1";
+
 const genAI = new GoogleGenerativeAI(apiKey);
 
-export const geminiFlash = genAI.getGenerativeModel({ 
-  model: "gemini-1.5-flash" 
-});
+export const geminiFlash = genAI.getGenerativeModel(
+  { model: "gemini-1.5-flash" },
+  { baseUrl: apiUrl }
+);
 
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 

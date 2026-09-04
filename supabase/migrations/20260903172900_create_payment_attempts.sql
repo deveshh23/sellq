@@ -31,4 +31,4 @@ CREATE POLICY "Users can insert own payment attempts" ON payment_attempts FOR IN
 CREATE POLICY "Users can update own payment attempts" ON payment_attempts FOR UPDATE USING (auth.uid() = user_id);
 
 -- Enable realtime
-ALTER PUBLICATION supabase_realtime ADD TABLE payment_attempts;
+DO $$ BEGIN ALTER PUBLICATION supabase_realtime ADD TABLE payment_attempts; EXCEPTION WHEN duplicate_object THEN NULL; END $$;

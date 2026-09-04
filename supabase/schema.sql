@@ -133,13 +133,13 @@ CREATE POLICY "Users can update own knowledge base" ON knowledge_base FOR UPDATE
 -- Auto-update knowledge_base word count trigger
 -- ============================================
 CREATE OR REPLACE FUNCTION update_kb_word_count()
-RETURNS TRIGGER AS $$
+RETURNS TRIGGER AS $$$$$$$$
 BEGIN
   NEW.word_count := array_length(string_to_array(trim(COALESCE(NEW.content, '')), ' '), 1);
   NEW.updated_at := NOW();
   RETURN NEW;
 END;
-$$ LANGUAGE plpgsql;
+$$$$$$$$ LANGUAGE plpgsql;
 
 CREATE TRIGGER trg_kb_word_count
   BEFORE INSERT OR UPDATE ON knowledge_base
@@ -149,13 +149,13 @@ CREATE TRIGGER trg_kb_word_count
 -- Auto-create profile on signup (auth trigger)
 -- ============================================
 CREATE OR REPLACE FUNCTION handle_new_user()
-RETURNS TRIGGER AS $$
+RETURNS TRIGGER AS $$$$$$$$
 BEGIN
   INSERT INTO public.profiles (id) VALUES (NEW.id);
   INSERT INTO public.knowledge_base (user_id) VALUES (NEW.id);
   RETURN NEW;
 END;
-$$ LANGUAGE plpgsql SECURITY DEFINER;
+$$$$$$$$ LANGUAGE plpgsql SECURITY DEFINER;
 
 CREATE TRIGGER on_auth_user_created
   AFTER INSERT ON auth.users
@@ -319,4 +319,4 @@ CREATE POLICY "Users can view own payment attempts" ON payment_attempts FOR SELE
 CREATE POLICY "Users can insert own payment attempts" ON payment_attempts FOR INSERT WITH CHECK (auth.uid() = user_id);
 CREATE POLICY "Users can update own payment attempts" ON payment_attempts FOR UPDATE USING (auth.uid() = user_id);
 
-ALTER PUBLICATION supabase_realtime ADD TABLE payment_attempts;
+DO $$ BEGIN ALTER PUBLICATION supabase_realtime ADD TABLE payment_attempts; EXCEPTION WHEN duplicate_object THEN NULL; END $$;
